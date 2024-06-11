@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 10px, 10px, 10px, 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* background-color: black; */
+}
+
+/* body{
+  background-color: black;
+} */
+
+
+
+
