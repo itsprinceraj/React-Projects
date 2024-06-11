@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* h1{
+  color: white;
+  margin: 0px;
+}
+
+
+p{
+  color: red;
+
+}
+div{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner-div {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: #474bff #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.loading {
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+  text-align: center;
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  color: black;
+}
+
+.card-container {
+  width: 250px;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgb(251, 5, 5);
+}
+
+.image {
+  width: 250px;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.description-box {
+  padding: 0px 0.5rem;
+}
+
+.button {
+  position: relative;
+}
+.like-button {
+  border: none;
+  position: absolute;
+  right: 0px;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 0, 0, 0.571);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(252, 252, 252);
+}
+
+.title {
+  margin-top: -2px;
+}
+.description {
+  margin-top: -10px;
+  font-weight: 400;
+}
+
+.main-heading {
+  padding: 1.5rem;
+  border: 3px dashed rgb(0, 170, 255);
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.filter-button-box {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.filter-button {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: rgb(28, 132, 206);
+  border-radius: 5px;
+  color: whitesmoke;
+  border: 2px solid white;
+}
