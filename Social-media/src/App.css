@@ -1,0 +1,98 @@
+.app-container {
+  display: flex;
+}
+
+.content {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.sidebar {
+  /* position: fixed; */
+  min-height: 800px;
+  width: 180px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+
+::placeholder {
+  color: white;
+}
+
+#modalSignin {
+  height: 630px;
+  font-size: 20px;
+}
+
+.tags {
+  margin-right: 0.5rem;
+}
+
+.post-card {
+  width: 30%;
+  margin: 2rem 1.3rem;
+}
+
+.alert-tab {
+  margin: 1rem;
+}
+
+.create-post {
+  width: 60%;
+  margin: 3% 5%;
+  /* display:flex */
+}
+
+.post-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* min-height: 450px; */
+}
+
+.delete-button {
+  cursor: pointer;
+}
+
+.Welcomemsg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.msgbtn {
+  display: flex;
+  gap: 1rem;
+}
+
+.fetchpost-btn-text {
+  color: white;
+}
+
+/* .dlt-btn {
+  width: 30px;
+  height: 30px;
+} */
+
+
+.loading{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
