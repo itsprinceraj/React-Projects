@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: hidden;
+  /* background-color: black; */
+  color: white;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.btn-action {
+  min-width: 90px;
+  cursor: pointer;
+  padding-right: 0;
+}
+
+.item {
+  width: 100%;
+}
+
+.items {
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-todo-msg {
+  font-size: 40px;
+  margin-top: 80px;
+}
