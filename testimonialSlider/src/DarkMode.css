@@ -1,0 +1,27 @@
+.light-mode {
+  color: black;
+  background-color: gainsboro;
+}
+
+.light-mode * {
+  background-color: gainsboro;
+  color: black;
+}
+
+.light-mode .card {
+  background-color: gainsboro;
+  color: black;
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.light-mode .button-card {
+  background-color: gainsboro;
+  color: black;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.light-mode .surprise-button {
+  color: white;
+}

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  font-family: "poppins";
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrappper {
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ui-mode {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.ui-mode-underline {
+  height: 5px;
+  background-color: rgb(133, 32, 226);
+  margin-top: 2px;
+}
+
+.heading {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 300px;
+  height: 55px;
+}
+
+.underline {
+  height: 5px;
+  background-color: rgb(133, 32, 226);
+  width: 200px;
+}
+
+/*  *******************Styling Card */
+
+.card {
+  padding: 0.5rem 0;
+  width: 50%;
+  height: max-content;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  /* border-radius: 7px; */
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: none;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.button-card {
+  /* padding: 1rem 0; */
+  padding-bottom: 1rem;
+  width: 50%;
+  height: max-content;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-top: none;
+  /* border-radius: 7px; */
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgb(0, 0, 0);
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image-background {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(133, 32, 226);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 28%;
+  top: 10%;
+}
+
+.profile-pic {
+  width: 140;
+  height: 140px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 200;
+  position: absolute;
+  left: 27%;
+  top: 12%;
+}
+
+.name-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.text-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  /* columns: purple; */
+}
+
+.description {
+  text-align: center;
+  padding: 1.5rem 3rem;
+}
+
+.job {
+  color: rgb(132, 32, 226);
+  text-transform: uppercase;
+  /* opacity: 0.9; */
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.button-left {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.button-right {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.surprise-button {
+  margin-top: 2rem;
+  width: 250px;
+  background-color: rgb(133, 32, 226);
+  color: black;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
