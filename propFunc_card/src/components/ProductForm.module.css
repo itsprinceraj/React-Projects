@@ -1,0 +1,51 @@
+.form {
+  width: 75%;
+  height: 80px;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  border-radius: 0.9rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.button {
+  padding: 1rem;
+  background-color: purple;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.titleInput {
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 1.6rem;
+  margin-top: 10px;
+}
+.dateInput {
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 1.6rem;
+  margin-top: 10px;
+}
+
+.productTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.productDate{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

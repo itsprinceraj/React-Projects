@@ -1,0 +1,12 @@
+.date{
+    background-color: black;
+    height: 85%;
+    width: 100px;
+    border-radius: 0.5rem;
+    color: rgb(218, 212, 212);
+    font-weight: 600;
+}
+.day{
+    color: white;
+    font-size: 2rem;
+}

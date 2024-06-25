@@ -1,0 +1,17 @@
+.product_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aqua;
+  border-radius: 0.6rem;
+  width: 90%;
+  height: 25%;
+  padding: 0rem 1rem;
+
+  /* justify-content: center; */
+}
+
+.title{
+  color: rgb(11, 11, 66);
+  font-size: 2rem;
+}
