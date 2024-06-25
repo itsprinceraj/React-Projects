@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.colorful {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffd82e;
+  transform-origin: top;
+  display: grid;
+  animation: colorful-3vgb5t 1s infinite linear;
+}
+
+.colorful::before,
+.colorful::after {
+  content: "";
+  grid-area: 1/1;
+  background: #ff6761;
+  border-radius: 50%;
+  transform-origin: top;
+  animation: inherit;
+  animation-name: colorful-k94uub;
+}
+
+.colorful::after {
+  background: #474bff;
+  --s: 180deg;
+}
+
+@keyframes colorful-3vgb5t {
+  0%,
+  20% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colorful-k94uub {
+  50% {
+    transform: rotate(var(--s, 90deg));
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.product:hover {
+
+  box-shadow: 1px 1px 5px 0.5px #ffffff;
+}
