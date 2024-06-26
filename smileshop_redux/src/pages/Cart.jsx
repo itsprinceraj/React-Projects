@@ -10,13 +10,14 @@ export const Cart = () => {
   }, 0);
   const [totalAmount, setTotalAmount] = useState(0);
   console.log(cart);
+  amountVar = parseFloat(amountVar.toFixed(3));
   useEffect(() => {
     setTotalAmount(amountVar);
   }, [cart]);
   return (
     <div>
       {cart.length !== 0 ? (
-        <div className=" my-8 flex justify-around max-w-7xl m-auto"> 
+        <div className=" my-8 flex justify-around max-w-7xl m-auto">
           <div>
             {cart.map((item, index) => (
               <CartItem item={item} key={index} />
@@ -26,8 +27,12 @@ export const Cart = () => {
           {/* summary layout */}
 
           <div className=" flex flex-col h-auto justify-stretch ">
-            <p className=" text-green-500 uppercase font-semibold text-xl ">Your Cart</p>
-            <p className=" text-green-500 uppercase text-5xl mb-4 font-bold ">Summary</p>
+            <p className=" text-green-500 uppercase font-semibold text-xl ">
+              Your Cart
+            </p>
+            <p className=" text-green-500 uppercase text-5xl mb-4 font-bold ">
+              Summary
+            </p>
             <p className=" font-semibold mt-4 mb-2 ">
               Total Items: <span>{cart.length}</span>
             </p>
@@ -36,7 +41,9 @@ export const Cart = () => {
               <p>
                 Total Amount: <span>${totalAmount}</span>
               </p>
-              <button className=" w-full p-2 text-2xl rounded-md bg-green-500  mt-2 ">Checkout Now!</button>
+              <button className=" w-full p-2 text-2xl rounded-md bg-green-500  mt-2 ">
+                Checkout Now!
+              </button>
             </div>
           </div>
         </div>
