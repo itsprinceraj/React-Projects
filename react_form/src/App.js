@@ -13,7 +13,7 @@ function App() {
     comment: true,
     candidate: true,
     offer: true,
-    pushNotification: "",
+    pushNotification: "", // radio button
   });
 
   console.log(formData);
@@ -31,9 +31,7 @@ function App() {
   };
   return (
     <div className="wrapper">
-      <div className="heading">
-        React Form
-      </div>
+      <div className="heading">React Form</div>
       <form className="form-container" onSubmit={submitHandler}>
         {/* the basic info */}
 
@@ -41,7 +39,7 @@ function App() {
         <input
           type="text"
           id="first-name"
-          name="firstName"
+          name="firstName"  // name must be same as useState variable;
           placeholder="First Name"
           onChange={changeHandler}
           value={formData.firstName}

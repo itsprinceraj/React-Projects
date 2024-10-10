@@ -17,7 +17,7 @@ function App() {
     if (buttonText === "C") {
       setDisplay("");
     } else if (buttonText === "=") {
-      const result = eval(displayVal);
+      const result = eval(displayVal);  // eval method
       setDisplay(result);
     } else {
       const newInputVal = displayVal + buttonText;

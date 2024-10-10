@@ -12,12 +12,14 @@ export const Cards = (props) => {
 
   function getCourse() {
     if (category === "All") {
+      // console.log(courses[category]);
+      console.log(Object.values(courses)); // we have an array now;
       Object.values(courses).forEach((courseCategory) => {
         courseCategory.forEach((courseData) => {
           allCourse.push(courseData);
         });
       });
-      console.log(allCourse);
+      // console.log(allCourse);
       return allCourse;
     } else {
       return courses[category];

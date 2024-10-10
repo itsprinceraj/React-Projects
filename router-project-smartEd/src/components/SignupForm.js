@@ -42,7 +42,7 @@ export const SignupForm = ({ setIsLoggedIn }) => {
       navigate("/dashboard");
       const finalData = {
         ...formData,
-        accountType,
+        accountType, // attaching account type
       };
       console.log(finalData);
     }

@@ -136,3 +136,16 @@
   color: black;
   font-weight: 600;
 }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.6rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: 3px dashed rgb(20, 105, 215);
+    max-width: 30%;
+    border-radius: 10px;
+  }
+}

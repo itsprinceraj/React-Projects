@@ -18,13 +18,15 @@ export const Card = (props) => {
     } else {
       //not liked then add like
       if (likedCourse.length === 0) {
-        setLikedCourse([course.id]);
+        setLikedCourse([course.id]); // course id key
       } else {
         setLikedCourse((prev) => [...prev, course.id]);
       }
       toast.success("Liked Successfully");
     }
   }
+
+  console.log(likedCourse);
 
   return (
     <div className="card-container">

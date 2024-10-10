@@ -19,8 +19,8 @@ function App() {
       let response = await fetch(apiUrl);
       let result = await response.json();
       setCourses(result.data);
-      console.log(result.data);
-      console.log("updated course", courses);
+      // console.log(result.data);
+      // console.log("updated course", courses);
     } catch (error) {
       // console.log(error);
       toast.error("Something Went Wrong");

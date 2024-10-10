@@ -19,7 +19,7 @@ export const Form = () => {
   //   });
   // }
 
-  // controlled Component -> the component in which the state is managed inside it , and each and every elemnent has a track of its data
+  // controlled Component -> the component in which the state is managed inside it , and each and every element has a track of its data
 
   function changeHandler(event) {
     const { name, value, checked, type } = event.target;
